@@ -1,0 +1,31 @@
+{
+  "name": "markum-ui",
+  "version": "1.0.0",
+  "description": "UI for the markum editor",
+  "main": "\"\"",
+  "scripts": {
+    "build": "cross-env NODE_ENV=development tailwindcss-cli -i ./css/tailwind.css -o ./css/tailwind.output.css",
+    "dist": "cross-env NODE_ENV=production tailwindcss-cli -i ./css/tailwind.css -o ./css/tailwind.output.css",
+    "serve": "serve ."
+  },
+  "keywords": [
+    "markdown",
+    "editor"
+  ],
+  "author": "Yuxuan Song",
+  "license": "GPL-3.0-or-later",
+  "dependencies": {
+    "@tailwindcss/typography": "^0.4.1",
+    "ace-builds": "^1.4.12",
+    "autoprefixer": "^10.3.1",
+    "katex": "^0.13.13",
+    "marked": "^3.0.0",
+    "postcss": "^8.3.6",
+    "serve": "^12.0.0",
+    "tailwindcss": "^2.2.7",
+    "tailwindcss-cli": "^0.1.2"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.3"
+  }
+}

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Markum</title>
+    <!-- KaTeX and its supporting resources -->
+    <link rel="stylesheet" href="node_modules/katex/dist/katex.min.css" />
+    <script src="node_modules/katex/dist/katex.min.js"></script>
+    <script src="node_modules/katex/dist/contrib/auto-render.min.js"></script>
+    <!-- TailwindCSS-->
+    <link rel="stylesheet" href="./css/tailwind.output.css" />
+    <!-- PDF export CSS -->
+    <link rel="stylesheet" media="print" href="print.css">
+  </head>
+  <body class="h-screen w-screen flex flex-1 flex-row divide-x divide-gray-200">
+    <!--Left pane-->
+    <div id="leftPane" class="flex flex-1">
+        <div id="markdown" class="font-mono text-base w-full max-w-1/2 h-full overflow-auto"></div>
+    </div>
+    <!--Right pane-->
+    <div id="rightPane" class="flex flex-1">
+        <div id="content" class="prose p-8 min-w-full h-full overflow-y-scroll m-auto"></div>
+    </div>
+    <script src="./node_modules/marked/marked.min.js"></script>
+    <!-- Ace Editor JavaScript assets -->
+    <script src="./node_modules/ace-builds/src-min-noconflict/ace.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
